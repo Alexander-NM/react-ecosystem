@@ -1,0 +1,41 @@
+{
+    "address_line1": "D",
+    "address_line2": "شەقامی ڕەمزی نافع, Erbil, 44001, Iraq",
+    "category": "building.residential",
+    "city": "Erbil",
+    "country": "Iraq",
+    "country_code": "iq",
+    "datasource": {
+        "attribution": "© OpenStreetMap contributors",
+        "license": "Open Database License",
+        "sourcename": "openstreetmap",
+        "url": "https://www.openstreetmap.org/copyright"
+    },
+    "distance": 0,
+    "district": "Erbil District",
+    "formatted": "D, شەقامی ڕەمزی نافع, Erbil, 44001, Iraq",
+    "iso3166_2": "IQ-AR",
+    "lat": 36.2097589,
+    "lon": 43.98173157348067,
+    "name": "D",
+    "neighbourhood": "Parkview",
+    "place_id": "516ac65461a9fd454059c0c52f61d91a4240f00102f901564f4a2e00000000c0020192030144",
+    "plus_code": "8H856X5J+WM",
+    "plus_code_short": "6X5J+WM Erbil, Erbil Governorate, Iraq",
+    "postcode": "44001",
+    "rank": {
+        "importance": 0.00000999999999995449,
+        "popularity": 4.175379035672776
+    },
+    "region": "Iraqi Kurdistan Region",
+    "result_type": "amenity",
+    "state": "Erbil Governorate",
+    "street": "شەقامی ڕەمزی نافع",
+    "timezone": {
+        "name": "Asia/Baghdad",
+        "offset_DST": "+03:00",
+        "offset_DST_seconds": 10800,
+        "offset_STD": "+03:00",
+        "offset_STD_seconds": 10800
+    }
+}

@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+    background-color: #262626;
+    color: #D9D9D9;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #F9F4DA;
+}
+
+header > p {
+    font-size: 0.875rem;
+    color: #8E8E8E;
+}
+
+section.game-status {
+    text-align: center;
+    padding: .5em 1em;
+    border-radius: 5px;
+    margin-block: 1rem;
+    color: #F9F4DA;
+    min-width: 100%;
+    width: max-content;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section.game-status.won {
+    background-color: #10A95B;
+}
+
+section.game-status.lost {
+    background-color: #BA2A2A;
+}
+
+section.game-status.farewell {
+    background-color: #7A5EA7;
+    border: 1px dashed #323232;
+    font-style: italic;
+    font-weight: 400;
+}
+
+section.game-status > h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+section.game-status > p {
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+section.languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 1rem;
+}
+
+section.languages > span{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+section.word-container,
+section.keyboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-block: 2.2rem;
+}
+
+section.word-container {
+    gap: 3px;
+}
+
+section.keyboard-container {
+    gap: 8px;  
+    width: 480px;
+    justify-content: center; 
+}
+section.word-container span,
+section.keyboard-container button{
+    font-size: 1.3rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    user-select: none;
+}
+
+section.word-container span {
+    color: #F9F4DA;
+    background-color: #323232;
+    border-bottom: solid #F9F4DA;
+    
+}
+
+section.word-container span.notGuessedLetter {
+    color: #EC5D49;
+}
+
+section.keyboard-container button{
+    border-radius: 5px;
+    color: #1E1E1E;
+    border: solid #D7D7D7;
+    cursor: pointer;
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+    user-select: none;
+}
+
+section.keyboard-container button:disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+button.new-game {
+    background-color: #11B5E5;
+    font-size: 1.125rem;
+    border: solid #D7D7D7;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: .8em 4em;
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+}
+
+button.orange {
+    background-color: #FCBA29;
+}
+
+button.green {
+    background-color: #10A95B;
+}
+
+button.red {
+    background-color: #EC5D49;
+}
+
+span.lost {
+    position: relative;
+}
+
+span.lost::before {
+    content: "💀";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 0.85rem;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
